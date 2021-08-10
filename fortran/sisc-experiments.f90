@@ -6,7 +6,7 @@
 program SiscExperiment
 
     ! ===================== Specify Equation Module Here ====================
-    use kdv_mod, only: L,N,init,y0,Np,tspan,Fs,reference_methods,eqn_name,error_filter ! quasigeostrophic, nls, nikolaevskiy, kuramoto, kdv
+    use quasigeostrophic_mod, only: L,N,init,y0,Np,tspan,Fs,reference_methods,eqn_name,error_filter ! quasigeostrophic, nls, nikolaevskiy, kuramoto, kdv
     ! =======================================================================
 
     use tools_mod,   only: dp, linspace, chebpts, legpts, print_cvector, isfinite, relerror_c, &
