@@ -20,8 +20,8 @@ module nls_mod
     integer,    parameter     :: Np                   = 2**10                         ! Number of spatial points (Must be Even)
     real(dp),   parameter     :: tspan(2)             = [ 0.0_dp, 15.0_dp ]           ! Time integration window
     logical,    parameter     :: reference_methods(3) = [ .true., .false., .true. ]   ! Methods for Reference Solution (ETDSDC,IMEXSDC,ETDRK)
-    integer,    parameter     :: num_tests            = 16                            ! Number of Numerical Tests
-    real,       parameter     :: smallest_F           = 5.0e3_dp                      ! Smallest Number of Function Evaluations
+    integer,    parameter     :: num_tests            = 20                            ! Number of Numerical Tests
+    real,       parameter     :: smallest_F           = 1.5e3_dp                      ! Smallest Number of Function Evaluations
     real,       parameter     :: largest_F            = 5.0e5_dp                      ! Maximum Number of Function Evaluations
     logical,    parameter     :: antialiasing_enabled = .true.                        ! determines if 2/3 antialiasing rule should be applied.
     ! Equation parameters

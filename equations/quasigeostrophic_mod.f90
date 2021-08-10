@@ -24,8 +24,8 @@ module quasigeostrophic_mod
     integer,    parameter :: Np                   = Nx * Ny                       ! Total Number of spatial points
     real(dp),   parameter :: tspan(2)             = [ 0.0_dp, 5.0_dp ]            ! Time integration window
     logical,    parameter :: reference_methods(3) = [ .true., .true., .false. ]   ! Methods for Reference Solution (ETDSDC,IMEXSDC,ETDRK)
-    integer,    parameter :: num_tests            = 16                            ! Number of Numerical Tests
-    real,       parameter :: smallest_F           = 1.5e3_dp                      ! Smallest Number of Function Evaluations
+    integer,    parameter :: num_tests            = 20                            ! Number of Numerical Tests
+    real,       parameter :: smallest_F           = 6e2_dp                        ! Smallest Number of Function Evaluations
     real,       parameter :: largest_F            = 1.0e5_dp                      ! Maximum Number of Function Evaluations
     logical,    parameter :: antialiasing_enabled = .true.                        ! determines if 2/3 antialiasing rule should be applied.
     ! Storage Arrays
